@@ -1,0 +1,52 @@
+# Project Development Prompts
+
+## 1. Initial Setup and Basic Pipeline
+Prompt: "Help me create a complete CI/CD pipeline for my ML project"
+- Created basic model architecture (model.py)
+- Set up training script (train.py)
+- Created test cases (test_model.py)
+- Added GitHub Actions workflow
+- Created .gitignore
+
+## 2. Model Parameter Optimization
+Prompt: "My test cases are failing AssertionError: Model has 206922 parameters, should be < 100000"
+- Reduced model architecture in model.py
+- Decreased number of filters and neurons
+- Optimized for <25,000 parameters
+
+## 3. GitHub Actions Update
+Prompt: "While running github action got following error: Error: This request has been automatically failed because it uses a deprecated version of actions/upload-artifact: v2"
+- Updated GitHub Actions workflow
+- Upgraded actions/upload-artifact to v4
+- Updated other GitHub Actions dependencies
+
+## 4. High Accuracy Test Case
+Prompt: "Add test case where check should done on accuracy of more than 95% in 1 Epoch"
+- Added new test case in test_model.py
+- Created test_model_high_accuracy function
+- Set accuracy threshold to 95%
+
+## 5. Image Augmentation
+Prompt: "Add image augmentation also display the image augmentation for 1 image"
+- Added data augmentation to train.py
+- Implemented visualization function
+- Added transforms: rotation, affine, perspective
+- Created example image display functionality
+
+## 6. Build Status Badge
+Prompt: "After successful completion of github action job. Add 'build pass' Badge to README.md"
+- Added GitHub Actions build status badge to README.md
+- Updated documentation
+
+## 7. Documentation Update
+Prompt: "Update my prompt.txt file with all the prompts that i used to build this project"
+- Created prompt.txt
+- Documented all major development steps
+- Added context for each prompt
+
+Each prompt led to specific improvements and features in the project, creating a comprehensive ML pipeline with:
+- Efficient model architecture
+- Automated testing
+- Data augmentation
+- CI/CD integration
+- Proper documentation 
