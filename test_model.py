@@ -52,7 +52,7 @@ def test_model_base_accuracy():
             correct += (predicted == target).sum().item()
     
     accuracy = 100 * correct / total
-    assert accuracy > 95, f"Model accuracy is {accuracy}%, should be > 80%"
+    assert accuracy > 95, f"Model accuracy is {accuracy}%, should be > 95%"
 
 def test_model_high_accuracy():
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
